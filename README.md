@@ -15,7 +15,7 @@ Here you can see all the work that I did for the university (UBB Computer Scienc
     * [ Object Oriented Programming](Semester2/Object%20Oriented%20Programming/)
     * [ Operating Systems](Semester2/Operating%20Systems/)
 * [Semester 3](Semester3/)
-    * [ Advanced Programming Methods](Semester3/Advanced%20Programming%20Methods/)
+    * [ Advanced Programming Methods](Semester3/Advanced%20programming%20methods)
     * [ Computer Networks](Semester3/Computer%20Networks/)
     * [ Databases](Semester3/Databases/)
     * [ Functional & logic programming](Semester3/Functional%20&%20logic%20programming/)

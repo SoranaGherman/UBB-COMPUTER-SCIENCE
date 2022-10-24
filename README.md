@@ -18,5 +18,5 @@ Projects and assignments done for the university courses
     * [ Advanced Programming Methods](Semester3/Advanced%20programming%20methods)
     * [ Computer Networks]()
     * [ Databases](Semester3/Databases/lab1)
-    * [ Functional & logic programming](Functional%20%26%20programming%20language)
-    * [ Probabilities & statistics](Probabilities%20and%20statistics)
+    * [ Functional & logic programming](Semester3/Functional%20%26%20programming%20language)
+    * [ Probabilities & statistics](Semester3/Probabilities%20and%20statistics)

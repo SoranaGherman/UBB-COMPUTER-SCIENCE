@@ -1,0 +1,23 @@
+p1:
+
+a)
+union([], Z, Z).
+union([X|Y], Z, RESULT) :-
+    member(X, Z), union(Y, Z, RESULT).
+union([X|Y], Z, [X|RESULT]) :-
+    \+ member(X,Z), union(Y, Z, RESULT).
+
+member(X, [X|_]).
+member(X, [_|TAIL]) :-
+    member(X, TAIL).
+
+
+b)
+currentElem([_], []).
+currentElem([H|T], [R1|R]) :-
+    combWithCurrentElem(H, T, R1),
+    currentElem(T, R).
+
+combWithCurrentElem(_,[],[]).
+combWithCurrentElem(E, [H|T], [[E,H]|R]) :-
+	combWithCurrentElem(E, T, R).

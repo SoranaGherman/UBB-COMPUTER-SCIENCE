@@ -1,22 +1,22 @@
 # UBB-Computer-Science
-Here you can see all the work that I did for the university (UBB Computer Science).
+Projects and assignments done for the university courses
 
 * [Semester 1](Semester1/)
     *  Algebra
     *  Calculus
-    * [ Computational Logic](Semester1/Computational%20Logic/)
-    * [ Computer Systems Architecture](Semester1/Computer%20Systems%20Architecture/)
-    * [ Fundamentals of Programming](Semester1/Fundamentals%20of%20Programming/)
+    * [ Computational Logic]()
+    * [ Computer Systems Architecture]()
+    * [ Fundamentals of Programming]()
 * [Semester 2](Semester2/)
-    * [ Data Structures and Algorithms](Semester2/Data%20Structures%20and%20Algorithms/)
-    * [ Dynamical Systems](Semester2/Dynamical%20Systems/)
+    * [ Data Structures and Algorithms]()
+    * [ Dynamical Systems]()
     *  Geometry
-    * [ Graphs](Semester2/Graphs/)
-    * [ Object Oriented Programming](Semester2/Object%20Oriented%20Programming/)
-    * [ Operating Systems](Semester2/Operating%20Systems/)
+    * [ Graphs]()
+    * [ Object Oriented Programming]()
+    * [ Operating Systems]()
 * [Semester 3](Semester3/)
     * [ Advanced Programming Methods](Semester3/Advanced%20programming%20methods)
     * [ Computer Networks]()
-    * [ Databases]()
-    * [ Functional & logic programming]()
-    * [ Probabilities & statistics]()
+    * [ Databases](Semester3/Databases/lab1)
+    * [ Functional & logic programming](Functional%20%26%20programming%20language)
+    * [ Probabilities & statistics](Probabilities%20and%20statistics)

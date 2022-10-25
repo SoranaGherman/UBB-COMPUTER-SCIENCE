@@ -3,7 +3,7 @@ Projects and assignments done for the university courses
 
 * [Semester 1](Semester1/)
     * [ Computer Systems Architecture](Semester1/ASC)
-    * [ Fundamentals of Programming]
+    * [ Fundamentals of Programming](Semester1/FP)
 * [Semester 2](Semester2/)
     * [ Data Structures and Algorithms]
     * [ Graphs]

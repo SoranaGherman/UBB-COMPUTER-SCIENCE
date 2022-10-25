@@ -6,8 +6,6 @@ Projects and assignments done for the university courses
     * [ Fundamentals of Programming]
 * [Semester 2](Semester2/)
     * [ Data Structures and Algorithms]
-    * [ Dynamical Systems]
-    *  Geometry
     * [ Graphs]
     * [ Object Oriented Programming]
     * [ Operating Systems]

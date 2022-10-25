@@ -6,7 +6,7 @@ Projects and assignments done for the university courses
     * [ Fundamentals of Programming](Semester1/FP)
 * [Semester 2](Semester2/)
     * [ Data Structures and Algorithms]
-    * [ Graphs]
+    * [ Graphs](Semester2/Graphs)
     * [ Object Oriented Programming]
     * [ Operating Systems]
 * [Semester 3](Semester3/)

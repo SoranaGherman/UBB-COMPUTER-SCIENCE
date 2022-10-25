@@ -5,7 +5,7 @@ Projects and assignments done for the university courses
     *  Algebra
     *  Calculus
     * [ Computational Logic]
-    * [ Computer Systems Architecture]
+    * [ Computer Systems Architecture](Semester1/ASC)
     * [ Fundamentals of Programming]
 * [Semester 2](Semester2/)
     * [ Data Structures and Algorithms]

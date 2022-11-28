@@ -1,0 +1,3 @@
+Sorana 4 3
+Norbert 1 5
+Ruxi 6 4

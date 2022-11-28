@@ -1,0 +1,31 @@
+% isConsecutive(L - list)
+% isConsecutive(i)
+% isConsecutive([l1,l2,..,ln]) = { true, L=[l1,l2] && l1+1=l2
+%                                { isConsecutive(l2..ln), l1+1=l2 && n>2
+%                                { false, otherwise
+isConsecutive([X,Y]):-X+1=:=Y.
+isConsecutive([H1,H2|T]):-H2=:=H1+1, isConsecutive([H2|T]).
+
+%sumCons(S-the sum to be obtained, P-the number to start(1), X- Result List)
+%sumCons(i,i,o)
+%sumCons(S, P) = { P, if S = P
+%                { P U sumCons(S, P+1), if S > P and P satisfies the cond of cons  
+%				 { false, otherwise
+
+sumCons(P, P, [P]).
+sumCons(S, P, [P|X]):-
+    S > P,
+    P1 is P + 1,
+    S1 is S-P,
+    sumCons(S1,P1,X).
+
+sumCons(S, P, X):-
+    S > P,
+    P1 is P+1,
+    sumCons(S, P1, X).
+
+sumCons(S, X):-
+    sumCons(S,1,X), isConsecutive(X).
+
+main(S, R):-
+    findall(X, sumCons(S,X), R).

@@ -1,0 +1,20 @@
+isMember(X, [X|_]):-!.
+isMember(X, [_|T]):-
+    isMember(X,T).
+
+main([], _, []).
+main([H1|T1], L2, REZ):-
+    isMember(H1, L2),!,
+    main(T1, L2, REZ).
+
+main([H1|T1], L2, [H1|REZ]):-
+    main(T1, L2, REZ).
+
+
+addOne([],[]).
+addOne([H|T], [H,1|REZ]):-
+    H mod 2 =:= 0,!,
+    addOne(T, REZ).
+addOne([H|T], [H|REZ]):-
+    addOne(T, REZ).
+

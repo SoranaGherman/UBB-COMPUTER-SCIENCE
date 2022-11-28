@@ -1,0 +1,30 @@
+nrOfOc([], _, C, C).
+nrOfOc([H|T], E, R, C):-
+    E =:= H,!,
+    C1 is C+1,
+    nrOfOc(T, E, R, C1).
+nrOfOc([_|T], E, R, C):-
+    nrOfOc(T, E, R, C).
+
+
+testL([]).
+testL([H|T]):-
+    nrOfOc(T, H, R, 0),
+	\+ R =:= 0,!,
+    false.
+testL([_|T]):-
+    testL(T).
+
+removeThree([],_,_,[]).
+removeThree([H|T], E, C, REZ):-
+            H =:= E,
+            C < 3,!,
+    		C1 is C + 1,
+            removeThree(T,E,C1,REZ).
+removeThree([H|T], E, C, [H|REZ]):-
+    		H =:= E,
+    		C >= 3, !, 
+    		removeThree(T, E, C, REZ).
+removeThree([H|T], E, C, [H|REZ]):-
+    		\+ H =:= E,
+    		removeThree(T, E, C, REZ).

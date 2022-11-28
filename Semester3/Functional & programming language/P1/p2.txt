@@ -1,0 +1,25 @@
+removeAtom(_,[], []).
+removeAtom(X, [H|T], REZ):-
+    X =:= H,!,
+    removeAtom(X, T, REZ).
+removeAtom(X, [H|T], [H|REZ]):-
+    \+ X=:=H,!,
+    removeAtom(X, T, REZ).
+
+
+nrOfOc([],_, C, C).
+nrOfOc([H|T], E, R, C):-
+    E =:= H,!,
+    C1 is C + 1,
+    nrOfOc(T, E, R, C1).
+nrOfOc([_|T], E, R, C):-
+    nrOfOc(T,E,R,C).
+
+
+pairs([], []).
+pairs([H|T], [[H,R1]|REZ]):-
+    nrOfOc(T, H, R, 0),
+	R1 is R + 1,
+	removeAtom(H, T, RL),
+	pairs(RL, REZ).
+	

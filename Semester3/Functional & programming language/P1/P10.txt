@@ -1,0 +1,29 @@
+test([_], _):-!.
+test([H1, H2|T], F):-
+    H1 > H2,
+    F =:= 0,!,
+    test([H2|T],F).
+test([H1, H2|T], F):-
+    H1 < H2,
+    F =:= 0,!,
+    F1 is 1,
+    test([H2|T], F1).
+test([H1, H2|T], F):-
+    H1 < H2,
+    F =:= 1,!,
+    test([H2|T], F).
+
+
+calcAlt([], _, R, R).
+calcAlt([H|T], F, C, R):-
+    F =:= 1,!,
+    C1 is C + H,
+    F1 is 0,
+    calcAlt(T, F1, C1, R).
+calcAlt([H|T], F, C, R):-
+    F =:= 0,!,
+    C1 is C - H,
+    F1 is 1,
+    calcAlt(T, F1, C1, R).
+    
+    

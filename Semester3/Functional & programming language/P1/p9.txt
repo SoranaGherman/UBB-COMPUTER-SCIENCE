@@ -1,0 +1,25 @@
+insertPos([],_,_,_,[]).
+insertPos([H|T],N,C,E,[E,H|REZ]):-
+    C =:= N,!,
+    C1 is C+1,
+    insertPos(T,N,C1,E,REZ).
+insertPos([H|T], N, C, E, [H|REZ]):-
+    C1 is C + 1,
+    insertPos(T,N,C1,E,REZ).
+
+gcd(0, X, X):- X > 0, !.
+gcd(X, Y, Z):- 
+    X >= Y,!, 
+    X1 is X-Y, 
+    gcd(X1,Y,Z).
+gcd(X, Y, Z):- 
+    X1 is Y-X, 
+    gcd(X1,X,Z).
+
+
+gcdL([_], _):-!.
+gcdL([H1, H2|T], Y):-
+    gcd(H1, H2, Y),!,
+    gcdL([Y|T], Y).
+
+

@@ -1,0 +1,50 @@
+nrOfOc([], _, C, C).
+nrOfOc([H|T], E, R, C):-
+    E =:= H,!,
+    C1 is C + 1,
+    nrOfOc(T, E, R, C1).
+
+nrOfOc([_|T], E, R, C):-
+    nrOfOc(T, E, R, C).
+
+
+removeElem([], _, []).
+removeElem([H|T], E, R):-
+    E =:= H,!,
+    removeElem(T, E, R).
+removeElem([H|T], E, [H|R]):-
+    removeElem(T,E,R).
+
+
+main([], []).
+main([H|T], R):-
+    nrOfOc(T, H, C, 1),
+    C > 1,!,
+    removeElem(T, H, RL),
+    main(RL, R).
+main([H|T], [H|R]):-
+    main(T, R).
+    
+
+maxOfTwo(X, Y, X) :-
+	X >= Y.
+maxOfTwo(X, Y, Y) :-
+	X < Y.
+
+maxL([X], X).
+maxL([H | T], X) :-
+	maxL(T, I),!,
+		maxOfTwo(H, I, X).
+
+main2([], []).
+main2(L, REZ):-
+    maxL(L, MAX),
+    removeElem,(L, MAX, REZ).
+
+
+    
+
+
+    
+    
+

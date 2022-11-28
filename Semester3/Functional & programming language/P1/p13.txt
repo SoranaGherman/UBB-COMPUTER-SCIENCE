@@ -1,0 +1,21 @@
+isMember(X, [X|_]).
+isMember(X, [_|T]):-
+    isMember(X,T).
+
+transform([], []).
+transform([H|T], [H|R]):-
+    \+ isMember(H, T),!,
+    transform(T, R).
+transform([_|T], R):-
+    transform(T,R).
+
+
+gcd(0, X, X):- X > 0,!.
+gcd(X, Y, Z):-
+    X >= Y,!,
+    X1 is X - Y,
+    gcd(X1,Y,Z).
+gcd(X,Y,Z):-
+    X1 is Y - X,
+    gcd(X1, X, Z).
+

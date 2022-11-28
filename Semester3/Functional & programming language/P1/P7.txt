@@ -1,0 +1,20 @@
+isMember(X, [X|_]).
+isMember(X, [_|T]):-
+    isMember(X,T).
+
+intersection([], _, []).
+intersection([H|T], S2, [H|REZ]):-
+    isMember(H, S2),!,
+    intersection(T, S2, REZ).
+intersection([_|T], S2, REZ):-
+    intersection(T, S2, REZ).
+
+
+interval(M,N,[]):- 
+    M > N,!.
+interval(M, N,[M|REZ]):-
+    M =< N,!,
+    M1 is M + 1,
+    interval(M1,N,REZ).
+
+    

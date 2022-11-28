@@ -1,0 +1,32 @@
+remove(_, [], []):-!.
+remove(X, [H|T], REZ):-
+    X =:= H,!,
+    remove(X, T, REZ).
+remove(X, [H|T], [H|REZ]):-
+    remove(X, T, REZ).
+
+transform([], []).
+transform([H|T], [H|REZ]):-
+    remove(H, T, R),
+    transform(R, REZ).
+
+decomposeE([],[], R, R).
+decomposeE([H|T], [H|E], C, R):-
+    H mod 2 =:= 0,!,
+    C1 is C + 1,
+    decomposeE(T, E, C1, R).
+decomposeE([_|T], E, C, R):-
+    decomposeE(T, E, C, R).
+
+decomposeO([], [], R, R).
+decomposeO([H|T], [H|O], C, R):-
+    H mod 2 =:= 1,!,
+    C1 is C + 1,
+    decomposeO(T, O, C1, R).
+decomposeO([_|T], O, C, R):-
+    decomposeO(T, O, C, R).
+
+main(L, E, O, RE, RO):-
+    decomposeE(L, E, 0, RE),
+    decomposeO(L, O, 0, RO).
+    

@@ -7,7 +7,7 @@ Projects and assignments done for the university courses
 * [Semester 2](Semester2/)
     * [ Data Structures and Algorithms](Semester2/DSA)
     * [ Graphs](Semester2/Graphs)
-    * [ Object Oriented Programming]
+    * [ Object Oriented Programming](Semester2/OOP)
     * [ Operating Systems]
 * [Semester 3](Semester3/)
     * [ Advanced Programming Methods](Semester3/Advanced%20programming%20methods)

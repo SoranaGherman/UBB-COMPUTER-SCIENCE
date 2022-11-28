@@ -1,0 +1,43 @@
+isMember(X, [X|_]).
+isMember(X, [_|TAIL]) :-
+    isMember(X, TAIL).
+
+removeDuplicates([], []).
+removeDuplicates([H|T], Res) :-
+    isMember(H,T),
+    removeDuplicates(T, Res).
+
+removeDuplicates([H|T], [H|Res]) :-
+    removeDuplicates(T, Res).
+
+merge_sort([],[]).     % empty list is already sorted
+merge_sort([X],[X]).   % single element list is already sorted
+merge_sort([A,B|R],Sorted):-
+    split([A,B|R], L1, L2),     % list with at least two elements is divided into two parts
+	merge_sort(L1,Sorted1),
+    merge_sort(L2,Sorted2),  			% then each part is sorted
+	merge(Sorted1,Sorted2,Sorted).      % and sorted parts are merged
+
+split([], [], []).
+split([_], [_], []).
+split([A, B| R], [A|Ra], [B|Rb]):-
+    split(R, Ra, Rb).
+
+merge([],L,L).
+merge(L,[],L):-L\=[].
+merge([X|T1],[Y|T2],[X|T]):-X=<Y,merge(T1,[Y|T2],T).
+merge([X|T1],[Y|T2],[Y|T]):-X>Y,merge([X|T1],T2,T).
+
+removeAndSort([],[]).
+removeAndSort([H|T], [FR|Res]) :-
+    is_list(H),
+    removeDuplicates(H, R),
+    merge_sort(R, FR),
+    removeAndSort(T,Res).
+
+removeAndSort([H|T], [H|Res]) :-
+    number(H),
+    removeAndSort(T,Res).
+
+    
+    

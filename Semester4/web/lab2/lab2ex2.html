@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		* {
+    box-sizing: border-box;
+	}
+
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+
+	.gallery {
+		display: flex;
+		margin: 10px auto;
+		max-width: 600px;
+		position: relative;
+		padding-top: 66%;
+	}
+	@media screen and (min-width: 600px) {
+		.gallery {
+			padding-top: 400px;
+		}
+	}
+
+	label img {
+		height: 100%;
+	} 
+	.gallery__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+	.gallery__thumb {
+		padding-top: 6px;
+		margin: 6px;
+		display: block;
+		height: 100%;
+		width: 95%;
+	}
+	.gallery__selector {
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.gallery__selector:hover + .gallery__img {
+		opacity: 1;
+	}
+	.gallery__selector:hover + .gallery__thumb > img {
+		box-shadow: 0 0 0 3px #0be2f6;
+	}
+	.gallery__item {
+		width: 25%;
+	}
+
+	</style>
+<body>
+	<section class="gallery">
+        <div class="gallery__item" >
+            <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
+            <img class="gallery__img" src="butterfly.jpg" alt=""/>
+            <label for="img-1" class="gallery__thumb">
+                <img src="butterfly.jpg" alt=""/>
+            </label>
+        </div>
+        <div class="gallery__item">
+            <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
+            <img class="gallery__img" src="backstroke.jpg" alt=""/>
+            <label for="img-2" class="gallery__thumb"><img src="backstroke.jpg" alt=""/></label>
+        </div>
+        <div class="gallery__item">
+            <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
+            <img class="gallery__img" src="breakstroke.jpg" alt=""/>
+            <label for="img-3" class="gallery__thumb"><img src="breakstroke.jpg" alt=""/></label>
+        </div>
+        <div class="gallery__item">
+            <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
+            <img class="gallery__img" src="freestyle.jpg" alt=""/>
+            <label for="img-4" class="gallery__thumb"><img src="freestyle.jpg" alt=""/></label>
+        </div>
+	</section>
+</body>
+</html>

@@ -15,3 +15,9 @@ Projects and assignments done for the university courses
     * [:floppy_disk: Databases](Semester3/Databases)
     * [:dvd: Functional & logic programming](Semester3/Functional%20%26%20programming%20language)
     * [:black_nib: Probabilities & statistics](Semester3/Probabilities%20and%20statistics)
+* [SEMESTER 4](Semester4/)
+    * [:mushroom: Database Management Systems]
+    * [:tulip: Web Programming]
+    * [:butterfly: Systems for Design and Implementation]
+    * [:cherries:  Artificial Intelligence]
+    * [:rocket:  Software Engineering]

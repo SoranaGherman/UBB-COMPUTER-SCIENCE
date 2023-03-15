@@ -18,6 +18,6 @@ Projects and assignments done for the university courses
 * [SEMESTER 4](Semester4/)
     * [:mushroom: Database Management Systems]
     * [:tulip: Web Programming]
-    * [:butterfly: Systems for Design and Implementation]
+    * [:butterfly: Systems for Design and Implementation](Semester4/sdi)
     * [:cherries:  Artificial Intelligence]
     * [:rocket:  Software Engineering]

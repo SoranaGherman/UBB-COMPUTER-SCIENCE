@@ -17,7 +17,7 @@ Projects and assignments done for the university courses
     * [:black_nib: Probabilities & statistics](Semester3/Probabilities%20and%20statistics)
 * [SEMESTER 4](Semester4/)
     * [:mushroom: Database Management Systems]
-    * [:tulip: Web Programming]
+    * [:tulip: Web Programming](Semester4/web)
     * [:butterfly: Systems for Design and Implementation](Semester4/sdi)
-    * [:cherries:  Artificial Intelligence]
-    * [:rocket:  Software Engineering]
+    * [:cherries: Artificial Intelligence]
+    * [:rocket: Software Engineering]

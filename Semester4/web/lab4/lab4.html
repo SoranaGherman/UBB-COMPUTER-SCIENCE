@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.submenu {
+  position: absolute; 
+  display: none;
+  top: 0; 
+  left: 100%; 
+  padding-left: 10%;
+  width: 100%;
+}
+
+.menu:hover .submenu {
+  display: block;
+}
+
+.menu {
+  display: block;
+  position: relative; 
+}
+
+
+
+</style>
+</head>
+<body>
+
+<h1>Vertical Menu</h1>
+
+<div class="vertical-menu" id="nav_bar">
+</div>
+
+</body>
+
+<script>
+  
+  function createMenuItem(name, link, _class="", id=""){
+    let a = document.createElement('a');
+    a.textContent = name;
+    a.href = link;
+    a.className = _class;
+    a.id = id;
+
+    return a;
+  }
+
+  const nav_bar = document.getElementById("nav_bar");
+  items = [createMenuItem('Home', '#', 'active menu'), createMenuItem('Menu1', '#'),
+           createMenuItem('Menu2', '#', 'menu'), createMenuItem('Menu3', '#'),
+           createMenuItem('Menu3', '#', 'menu'), createMenuItem('Menu5', '#')];
+
+  for(j in items){
+    item = items[j];
+    let rand_no = Math.floor(Math.random() * 3 + 3);
+
+    let main_div = document.createElement('div');
+    main_div.className = 'menu';
+    main_div.appendChild(item);
+
+    let div = document.createElement('div');
+    div.className = "submenu";
+
+    for(i = 0; i < rand_no; i++){
+      div.appendChild(createMenuItem(`${i}`, "#"));
+    }
+
+    main_div.appendChild(div);
+    nav_bar.appendChild(main_div);
+  }
+  
+</script>
+
+</html>

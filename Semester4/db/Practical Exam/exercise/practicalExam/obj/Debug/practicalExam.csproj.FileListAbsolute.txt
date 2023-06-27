@@ -1,0 +1,31 @@
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\bin\Debug\practicalExam.exe.config
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\bin\Debug\practicalExam.exe
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\bin\Debug\practicalExam.pdb
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\obj\Debug\practicalExam.csproj.AssemblyReference.cache
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\obj\Debug\practicalExam.csproj.SuggestedBindingRedirects.cache
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\obj\Debug\practicalExam.Form1.resources
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\obj\Debug\practicalExam.Properties.Resources.resources
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\obj\Debug\practicalExam.csproj.GenerateResource.cache
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\obj\Debug\practicalExam.csproj.CoreCompileInputs.cache
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\obj\Debug\practicalExam.exe
+D:\Faculty materials\2nd year\2nd sem\DBMS\LAB\practicalExam\practicalExam\obj\Debug\practicalExam.pdb
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\bin\Debug\practicalExam.exe.config
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\bin\Debug\practicalExam.exe
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\bin\Debug\practicalExam.pdb
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\obj\Debug\practicalExam.csproj.AssemblyReference.cache
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\obj\Debug\practicalExam.Form1.resources
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\obj\Debug\practicalExam.Properties.Resources.resources
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\obj\Debug\practicalExam.csproj.GenerateResource.cache
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\obj\Debug\practicalExam.csproj.CoreCompileInputs.cache
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\obj\Debug\practicalExam.exe
+D:\Ubb year 2\DBMS\practicalExam\practicalExam\obj\Debug\practicalExam.pdb
+D:\Ubb year 2\DBMS\exercise\practicalExam\bin\Debug\practicalExam.exe.config
+D:\Ubb year 2\DBMS\exercise\practicalExam\bin\Debug\practicalExam.exe
+D:\Ubb year 2\DBMS\exercise\practicalExam\bin\Debug\practicalExam.pdb
+D:\Ubb year 2\DBMS\exercise\practicalExam\obj\Debug\practicalExam.csproj.AssemblyReference.cache
+D:\Ubb year 2\DBMS\exercise\practicalExam\obj\Debug\practicalExam.Form1.resources
+D:\Ubb year 2\DBMS\exercise\practicalExam\obj\Debug\practicalExam.Properties.Resources.resources
+D:\Ubb year 2\DBMS\exercise\practicalExam\obj\Debug\practicalExam.csproj.GenerateResource.cache
+D:\Ubb year 2\DBMS\exercise\practicalExam\obj\Debug\practicalExam.csproj.CoreCompileInputs.cache
+D:\Ubb year 2\DBMS\exercise\practicalExam\obj\Debug\practicalExam.exe
+D:\Ubb year 2\DBMS\exercise\practicalExam\obj\Debug\practicalExam.pdb

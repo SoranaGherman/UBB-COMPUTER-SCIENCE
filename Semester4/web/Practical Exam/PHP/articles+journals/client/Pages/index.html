@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+
+    <script src="../Scripts/Index.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <div class="content">
+        <div>
+            <div class="mb">
+                <h2>Journals</h2>
+                <table class="mb">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id='journals'>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mb">
+                <h2>My articles</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Summary</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id='my-articles'>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <label for="journal-name">Journal Name</label>
+            <input type="text" id="journal-name" name="jn">
+
+            <label for="article-summary">Article Summary</label>
+            <input type="text" id="summary" name="sum">
+            
+            <button id="btn-add">Add Article</button>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    const handler = new HandleViewEvents();
+</script>
+
+</html>

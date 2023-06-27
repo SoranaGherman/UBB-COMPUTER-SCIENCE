@@ -1,0 +1,18 @@
+#loginForm {
+    display: grid;
+    grid-template-columns: .5fr 2fr 10fr;
+    grid-gap: 10px;
+}
+
+label {
+    grid-column: 1;
+}
+
+input {
+    grid-column: 2;
+}
+
+#login_button {
+    grid-column: 1;
+    justify-self: end;
+}

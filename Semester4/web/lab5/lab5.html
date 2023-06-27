@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dialog Window Example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+	.dialog-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: pink;
+		border: 1px solid palevioletred;
+		padding: 10px;
+		z-index: 9999;
+		width:  300px;
+		height: 150px;
+	}
+
+	.dialog-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: bold;
+		margin-bottom: 5px;
+		color: black;
+		padding-bottom: 20px;
+	}
+
+	.dialog-title-text {
+		flex-grow: 1;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.dialog-close {
+		cursor: pointer;
+		font-weight: normal;
+		color: pink;
+		background-color: palevioletred;
+		width: 20px;
+		height: 20px;
+		padding-left: 10px;
+	}
+    
+    button {
+      position: absolute;
+			left: 45%;
+      top: 15%;
+      width: 100px;
+      height: 30px;
+      color: black;
+      background-color: pink;
+      font: bold;
+    }
+
+	</style>
+</head>
+<body>
+  <div class="dialog-container"></div>
+  <div class="dialog-title"></div>
+  <div class="dialog-title-text">DIALOG TITLE</div>
+  <div class="dialog-close">x</div>
+	<button id="show-dialog-btn">Show Dialog</button>
+
+	<script>
+		$(document).ready(function() {
+			// Create the dialog container element
+			var $dialogContainer = $('.dialog-container');
+
+			// Create the dialog title element
+			var $dialogTitle = $('.dialog-title');
+			var $dialogTitleText = $('.dialog-title-text');
+			var $dialogClose = $('.dialog-close');
+
+			// Add the title elements to the container
+			$dialogTitle.append($dialogTitleText);
+			$dialogTitle.append($dialogClose);
+			$dialogContainer.append($dialogTitle);
+
+			// Add some content to the dialog container
+			var $dialogContent = $('<div>This is the default dialog which is useful for displaying information. The dialog window can be moved and closed with the x icon!!</div>');
+			$dialogContainer.append($dialogContent);
+
+			// Add the dialog container to the body
+			$('body').append($dialogContainer);
+
+			// Hide the dialog container by default
+			$dialogContainer.hide();
+
+			// Show the dialog container when the button is clicked
+			$('#show-dialog-btn').click(function() {
+				$dialogContainer.show();
+			});
+
+			// Allow the user to move the dialog container around
+			$dialogTitle.on('mousedown', function(event) {
+				var startX = event.pageX;
+				var startY = event.pageY;
+				var dialogX = $dialogContainer.offset().left;
+				var dialogY = $dialogContainer.offset().top;
+				var deltaX = startX - dialogX;
+				var deltaY = startY - dialogY;
+				$(document).on('mousemove.dialog', function(event) {
+					$dialogContainer.offset({
+						left: event.pageX - deltaX,
+						top: event.pageY - deltaY
+					});
+				});
+				$(document).on('mouseup.dialog', function() {
+					$(document).off('mousemove.dialog');
+					$(document).off('mouseup.dialog');
+				});
+			});
+
+			// Allow the user to close the dialog container
+			$dialogClose.click(function() {
+				$dialogContainer.hide();
+			});
+		});
+
+	</script>
+</body>
+</html>

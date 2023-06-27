@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="exam">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exam</title>
+
+        <link rel="stylesheet" href="../styles/main.css">
+        <script src="../scripts/players.js"></script>
+    </head>
+
+    <body>
+        <main>
+            
+            <h1 class="title">Exam</h1><hr>
+
+
+            <div tabless>
+            <div class="div1">
+        
+            <form class="form" action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <button type="button" id="filter_players_button">
+                    FILTER
+                </button>
+            </form>
+
+            <div id="players_div">
+                <table id="players_table">
+                    <thead>
+                        <th>Player Name</th>
+                        <th>Player Position</th>
+                    </thead>
+                    <tbody id="cols">
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+            <div class="div2">
+
+            <form class="form" action="">
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree"><br>
+
+                <button type="button" id="show_degree_button">
+                    SHOW MEMBER RELATIONSHIP
+                </button>
+            </form>
+
+            <div id="players_same_team_div">
+                <table id="players_same_team_table">
+                    <thead>
+                        <th>Player Name</th>
+                        <th>Player Position</th>
+                    </thead>
+                    <tbody id="cols2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+        </main>
+    </body>
+
+    <script language="javascript" type="text/javascript">
+        var eventHandler = new EventHandling();
+    </script>
+</html>

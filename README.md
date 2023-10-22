@@ -21,3 +21,8 @@ Projects and assignments done for the university courses
     * [:butterfly: Systems for Design and Implementation](Semester4/sdi)
     * [:cherries: Artificial Intelligence](Semester4/ai)
     * [:rocket: Software Engineering](Semester4/se)
+* [SEMESTER 5](Semester5/)
+    * [:mushroom: Fundamental Languages And Compiler Design](Semester5/FLCD)
+    * [:tulip: Parallel and Distributed Programming](Semester4/web)
+    * [:butterfly: Mobile Application Programming](Semester4/sdi)
+    * [:cherries: Computer Vision and Deep Learning](Semester4/ai)

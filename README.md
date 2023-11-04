@@ -24,5 +24,5 @@ Projects and assignments done for the university courses
 * [SEMESTER 5](Semester5/)
     * [🌸 Fundamental Languages And Compiler Design](Semester5/FLCD)
     * [💌 Parallel and Distributed Programming]()
-    * [🌻 Mobile Application Programming](Semester5/MOBILE))
+    * [🌻 Mobile Application Programming](Semester5/MOBILE)
     * [🍉 Computer Vision and Deep Learning]()

@@ -1,0 +1,19 @@
+~
+    a : integer;
+    b : integer;
+    c : integer;
+
+    maxx : integer = a;
+
+    if ~ maxx <= b ~
+        ~
+            maxx = b;
+        ~
+
+    if ~ maxx < c ~
+        ~
+            maxx = c;
+        ~
+
+   show { maxx };
+~

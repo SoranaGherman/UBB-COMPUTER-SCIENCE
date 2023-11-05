@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+    </style>
+
+    <style name="CustomMaterialButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">8dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/swimmingpool"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/swimmerRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/addPersonIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="140dp"
+            app:srcCompat="@drawable/baseline_person_add_24"
+            android:contentDescription="Add a new swimmer to the team" />
+    </LinearLayout>
+</RelativeLayout>

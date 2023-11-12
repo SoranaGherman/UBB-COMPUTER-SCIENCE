@@ -1,0 +1,9 @@
+~
+    ab: integer = 9;
+    b: integer = 10;
+    c: integer = 1234;
+
+    diff : integer = a - b - c;$
+
+    show { diff };
+~

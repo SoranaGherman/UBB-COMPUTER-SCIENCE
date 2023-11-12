@@ -1,0 +1,16 @@
+~
+    ab: integer;
+    ba: integer;
+    a: integer;
+    an: integer = "124";
+
+    scan { ab };
+    scan { ba };
+    scan { c };
+
+    sum : integer = ab + ba + c;
+
+    show { sum };
+~
+
+

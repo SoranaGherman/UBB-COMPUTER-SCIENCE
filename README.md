@@ -22,7 +22,7 @@ Projects and assignments done for the university courses
     * [:cherries: Artificial Intelligence](Semester4/ai)
     * [:rocket: Software Engineering](Semester4/se)
 * [SEMESTER 5](Semester5/)
-    * [🌸 Fundamental Languages And Compiler Design](Semester5/FLCD)
+    * [🌸 Formal Languages And Compiler Design](Semester5/FLCD)
     * [💌 Parallel and Distributed Programming]()
     * [🌻 Mobile Application Programming](Semester5/MOBILE)
     * [🍉 Computer Vision and Deep Learning]()

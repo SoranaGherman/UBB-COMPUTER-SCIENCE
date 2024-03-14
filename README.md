@@ -26,3 +26,7 @@ Projects and assignments done for the university courses
     * [💌 Parallel and Distributed Programming]()
     * [🌻 Mobile Application Programming](Semester5/MOBILE)
     * [🍉 Computer Vision and Deep Learning]()
+* [SEMESTER 6](Semester6/)
+    * [💮 AI In Climate Change](Semester6/AI)
+
+      
